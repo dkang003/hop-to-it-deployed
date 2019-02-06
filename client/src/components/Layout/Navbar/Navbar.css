@@ -1,0 +1,14 @@
+nav {
+    background-color: rgba(0, 0, 0, .65);
+    color: white;
+    height: 5rem;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 8px;
+    justify-items: space-between;
+    padding: 1rem;
+    }

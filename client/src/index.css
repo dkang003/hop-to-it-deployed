@@ -1,0 +1,83 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Economica', sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://i.imgur.com/zkS8FQV.jpg");
+  background-size: cover; 
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1, h2 {
+  color: lightgray;
+  font-family: 'Coda', cursive;
+
+}
+h3, h5 {
+  color: slategray;
+  font-family: 'Coda', cursive;
+  text-transform: uppercase;
+  margin-bottom: -1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-kerning: 1.75rem;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 2rem;
+  font-family: 'Coda', cursive;
+}
+
+.aboutBox {
+  color: white;
+  background-color: rgba(0, 0, 0, .65);
+  margin: 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-link:link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+.nav-link:visited {
+  color: #fff;
+}
+.nav-link:hover, {
+  color: teal;
+}
+.nav-link:active {
+  color: goldenrod;
+}
+
+.activeRoute {
+  background-color: goldenrod;
+  border-bottom: 0.4rem solid goldenrod
+  ;
+  cursor: not-allowed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

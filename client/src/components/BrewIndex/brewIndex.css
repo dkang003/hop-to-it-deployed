@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+}
+
+.mapContainer {
+    flex-grow: 1;
+    height: 85vh;
+    top: 0;
+    position: sticky;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.breweriesContainer {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.brewIndexTitle {
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+}
