@@ -19,10 +19,9 @@ export default class Brewery extends Component {
             let { data: { payload } } = await axios.get(`/api/users/${currentUser._id}`);
             this.setState({ favorites: payload.favorites })
             // Check for a brewery to see if it exists as favorite
-            if (!this.state.favorites.indexOf(brewery.id)) {
+            if (this.state.favorites.indexOf(brewery.id) > 0) {
                 this.setState({ like: true })
             } 
-    
         } catch(err) {
             debugger
         }
