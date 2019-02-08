@@ -33,7 +33,7 @@ app.use('/api/breweries', breweriesRoutes);
 
 app.get('/test', (req, res) => {
     // axios('http://api.brewerydb.com/v2/locations/?key=e64cdf34c138b3ad00ce4a5de938d8f1')
-    axios('xhttps://api.foursquare.com/v2/venues/search?client_id=KHATSZ4BVM2SCHQ4EXXWDA5Y1JR0TPWWYEGKCWWKQWEWAC0T&client_secret=II045QCNYPDZSG1YAQXD3IK2APZMOQZI3IMXADCG403ZJ23J&v=20180323&limit=100&ll=34.0522,-118.2437&query=brewery')
+    axios('xhttps://api.foursquare.com/v2/venues/search?client_id=process.env.clientId&client_secret=process.env.clientSecret&v=20180323&limit=100&ll=34.0522,-118.2437&query=brewery')
         .then(response => { 
             res.json(response.data)
         })
