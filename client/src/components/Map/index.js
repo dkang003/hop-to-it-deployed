@@ -3,6 +3,7 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 
 
+
 export class MapContainer extends Component {
     state = {
         showingInfoWindow : false,
@@ -77,5 +78,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: "`${process.env.mapApiKey}`"
+    apiKey: `AIzaSyBri2OuVQoWvBCdoQLj82bGf_S4rlLo2PI`
 })(MapContainer)
