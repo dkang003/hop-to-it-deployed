@@ -20,7 +20,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
 app.use(express.static(path.join(__dirname, "client", "build")))
 app.get('/api', (req,res) => {
     res.json({ message: "API ROOT" })
@@ -48,5 +48,5 @@ app.get("*", (req, res) => {
 })
 
 app.listen(PORT, (err) => {
-    console.log(err || `Server running on port ${PORT}`) 
+    console.log(err || `Server running on port ${PORT}`)
 });

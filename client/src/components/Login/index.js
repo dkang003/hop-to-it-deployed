@@ -8,6 +8,7 @@ class Login extends Component {
     };
 
     handleChange = (e) => {
+
         let { name, value } = e.target;
         this.setState({ [name]: value });
     };
